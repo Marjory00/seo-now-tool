@@ -1,21 +1,102 @@
-# Python
+# ── Python ────────────────────────────────────────────────────────────
 __pycache__/
 *.py[cod]
-.env
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Virtual Environment ───────────────────────────────────────────────
 venv/
 .venv/
+env/
+ENV/
 
-# Node
+# ── Environment & Secrets ─────────────────────────────────────────────
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+
+# ── Core Backend Logic (proprietary — do not expose) ─────────────────
+backend/core/
+backend/api/
+backend/utils/
+backend/tests/
+backend/main.py
+
+# ── Frontend Source Logic (proprietary — do not expose) ───────────────
+frontend/src/components/
+frontend/src/pages/
+frontend/src/hooks/
+frontend/src/utils/
+frontend/src/styles/
+frontend/src/App.jsx
+frontend/src/main.jsx
+
+# ── Node / Frontend Build ─────────────────────────────────────────────
 node_modules/
 dist/
 .vite/
+frontend/dist/
 
-# macOS
+# ── macOS ─────────────────────────────────────────────────────────────
 .DS_Store
+.AppleDouble
+.LSOverrideIcon
+._*
 
-# VS Code
+# ── VS Code ───────────────────────────────────────────────────────────
 .vscode/settings.json
+.vscode/launch.json
+*.code-workspace
 
-# Logs
+# ── Logs & Debug ──────────────────────────────────────────────────────
 *.log
-.env.local
+logs/
+npm-debug.log*
+yarn-debug.log*
+
+# ── Misc ──────────────────────────────────────────────────────────────
+*.swp
+*.swo
+.cache/
+.pytest_cache/
+.mypy_cache/
+```
+
+---
+
+## What this protects
+
+| Protected | What stays hidden |
+|---|---|
+| `backend/core/` | Your scraper and scoring algorithm |
+| `backend/api/` | All five analysis modules |
+| `backend/main.py` | App entry point and route structure |
+| `frontend/src/` | All React components, pages, and utilities |
+| `.env` files | Any API keys or secrets |
+
+---
+
+## What stays PUBLIC on GitHub
+
+These files **will** be visible — enough to show it's a real project without giving away your code:
+```
+seo-now-tool/
+├── README.md              ← portfolio showcase
+├── LICENSE                ← your ownership
+├── .gitignore             ← this file
+├── backend/
+│   └── requirements.txt   ← shows your tech stack
+├── frontend/
+│   ├── package.json       ← shows dependencies
+│   ├── index.html         ← entry shell
+│   ├── vite.config.js     ← build config
+│   ├── tailwind.config.js ← styling config
+│   └── postcss.config.js  ← build config
+└── docs/                  ← any screenshots you add
