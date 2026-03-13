@@ -14,7 +14,7 @@
 
 Image 1
 
-[SEO Now Tool Dashboard](docs/seo_now_tool_screenshot.png)
+![SEO Now Tool Dashboard](docs/seo_now_tool_screenshot.png)
 
 
 Image 2
