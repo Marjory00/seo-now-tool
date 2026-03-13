@@ -10,7 +10,15 @@
 
 ---
 
-## 📸 Overview
+## 📸 App Preview
+
+![SEO Now Tool Dashboard](docs/screenshot.png)
+
+*The results dashboard showing the composite SEO score, five analysis cards, and issues list.*
+
+---
+
+## 🧭 Overview
 
 SEO Now Tool is a lightweight, self-hosted SEO auditing application. Paste any public URL and receive an instant breakdown of:
 
@@ -59,6 +67,7 @@ returning results in a clean, scored dashboard.
 ---
 
 ## 🗂️ File & Folder Structure
+
 ```
 seo-now-tool/
 ├── backend/                        # FastAPI Python backend
@@ -105,7 +114,8 @@ seo-now-tool/
 │           ├── api.js              # Axios API call wrappers
 │           └── score.js            # Client-side score calculator
 │
-├── docs/                           # Reserved for additional documentation
+├── docs/
+│   └── screenshot.png              # ← App preview image goes here
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -114,6 +124,7 @@ seo-now-tool/
 ---
 
 ## 🏗️ Architecture
+
 ```
 ┌─────────────────────────────────────┐
 │          React Frontend             │
@@ -155,24 +166,23 @@ seo-now-tool/
 - macOS (tested), Linux, or Windows WSL
 
 ### 1 — Clone the repository
+
 ```bash
 git clone https://github.com/Marjory00/seo-now-tool.git
 cd seo-now-tool
 ```
 
 ### 2 — Set up the backend
+
 ```bash
 cd backend
 
 # Create and activate a virtual environment
-python3 -m venv venv
+python3.11 -m venv venv
 source venv/bin/activate
 
 # Install Python dependencies
 pip install -r requirements.txt
-
-# Copy environment variables
-cp .env.example .env
 
 # Start the FastAPI server
 uvicorn main:app --reload --port 8000
@@ -184,6 +194,7 @@ Interactive docs available at `http://localhost:8000/docs`.
 ### 3 — Set up the frontend
 
 Open a new terminal tab:
+
 ```bash
 cd frontend
 
@@ -209,6 +220,7 @@ Recommended extensions for this project:
 - **REST Client**
 
 Recommended workspace settings (`.vscode/settings.json`):
+
 ```json
 {
   "editor.formatOnSave": true,
@@ -236,6 +248,7 @@ All endpoints accept a `POST` request with JSON body `{ "url": "https://example.
 ## 🌐 Deploying to Production
 
 ### Backend (Railway, Render, or Fly.io)
+
 ```bash
 uvicorn main:app --host 0.0.0.0 --port $PORT
 ```
@@ -243,6 +256,7 @@ uvicorn main:app --host 0.0.0.0 --port $PORT
 Update the `allow_origins` list in `main.py` to your frontend domain.
 
 ### Frontend (Vercel or Netlify)
+
 ```bash
 npm run build
 # Deploy the generated dist/ folder
