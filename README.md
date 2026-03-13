@@ -12,7 +12,12 @@
 
 ## 📸 App Preview
 
-![SEO Now Tool Dashboard](docs/screenshot.png)
+Image 1
+
+![SEO Now Tool Dashboard](docs/seo_now_tool_screenshot.svg)
+Image 2
+
+![SEO Now Tool Dashboard](docs/seo-now-tool-main-screenshot.png)
 
 *The results dashboard showing the composite SEO score, five analysis cards, and issues list.*
 
@@ -305,6 +310,7 @@ See [LICENSE](./LICENSE) for full terms.
 
 - 🌐 GitHub: [@Marjory00](https://github.com/Marjory00)
 - 🎨 CodePen: [@Marjory00](https://codepen.io/Marjory00)
+- 📧 Email: [samaterra@hotmail.com](mailto:samaterra@hotmail.com)
 
 ---
 
