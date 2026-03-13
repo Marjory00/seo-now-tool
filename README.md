@@ -12,16 +12,9 @@
 
 ## 📸 App Preview
 
-Image 1
-
 ![SEO Now Tool Dashboard](docs/image1.png)
 
-Image 2
-
 ![SEO Now Tool Main](docs/image2.png)
-
-
-*The results dashboard showing the composite SEO score, five analysis cards, and issues list.*
 
 ---
 
@@ -43,9 +36,10 @@ A composite **SEO score out of 100** aggregates all checks into a single actiona
 
 ### Problem
 
-Marketers and indie developers often lack access to enterprise SEO tools like Ahrefs or SEMrush.
-Basic on-page audits — checking title length, reading ease, or broken links — require either
-expensive subscriptions or manually inspecting page source.
+Running a proper on-page SEO audit is harder than it should be. Developers and content creators
+are often stuck choosing between manually digging through page source code or signing up for
+costly tools with features they'll never use. There was no simple, fast, self-hostable option
+that just works — no account required, no paywalls, no bloat.
 
 ### Solution
 
@@ -122,7 +116,8 @@ seo-now-tool/
 │           └── score.js            # Client-side score calculator
 │
 ├── docs/
-│   └── screenshot.png              # ← App preview image goes here
+│   ├── image1.png                  # Results dashboard screenshot
+│   └── image2.png                  # Homepage screenshot
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -312,7 +307,6 @@ See [LICENSE](./LICENSE) for full terms.
 
 - 🌐 GitHub: [@Marjory00](https://github.com/Marjory00)
 - 🎨 CodePen: [@Marjory00](https://codepen.io/Marjory00)
-
 ---
 
 *Built with ☕ and Python on macOS.*
