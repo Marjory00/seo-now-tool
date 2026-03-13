@@ -313,7 +313,6 @@ See [LICENSE](./LICENSE) for full terms.
 
 - 🌐 GitHub: [@Marjory00](https://github.com/Marjory00)
 - 🎨 CodePen: [@Marjory00](https://codepen.io/Marjory00)
-- 📧 Email: [samaterra@hotmail.com](mailto:samaterra@hotmail.com)
 
 ---
 
